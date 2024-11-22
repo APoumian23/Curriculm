@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --fuente-Raleway: "Raleway", san-serif;
+  --color-verde-fondo: #798645;
+  --color-presentacion-letras: #131211;
+  --color-sobremi-beige: #fefae0;
+  --color-blanco: #ffffff;
+  --color-beige: #f2eed7;
+  --color-verdeoscuro: #626f47;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-verde-fondo);
+  height: auto;
+}
+
+.navegacion {
+  display: flex;
+  width: 1136px;
+  padding: 32px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mi_nombre {
+  color: var(--color-blanco);
+  font-family: var(--fuente-Raleway);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: auto;
+}
+
+.navegacion_referencias {
+  display: flex;
+  width: 1136px;
+  padding: 32px 0;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 350px;
+}
+
+/* Agrupar reglas comunes */
+.cabecera_sobre_mi,
+.cabecera_Skills,
+.cabecera_Hobbies,
+.cabecera_Formación,
+.cabecera_Proyectos,
+.cabecera_correo {
+  color: var(--color-blanco);
+  font-family: var(--fuente-Raleway);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cabecera_sobre_mi:hover,
+.cabecera_Skills:hover,
+.cabecera_Hobbies:hover,
+.cabecera_Formación:hover,
+.cabecera_Proyectos:hover,
+.cabecera_correo:hover {
+  text-decoration: underline;
+}
+
+.presentacion {
+  display: flex;
+  width: 1136px;
+  justify-content: space-between;
+  align-items: center;
+  height: 368px;
+  margin: 4%;
+}
+
+.presentacion_contenido {
+  display: flex;
+  width: 751px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subtitulo_presentacion,
+.subtitulo_formacion,
+.subtitulo_experiencia {
+  color: var(--color-blanco);
+  font-family: var(--fuente-Raleway);
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.subtitulo_sobremi {
+  color: var(--color-presentacion-letras);
+  font-family: var(--fuente-Raleway);
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.presentacion_texto {
+  color: var(--color-presentacion-letras);
+  font-family: var(--fuente-Raleway);
+  font-size: 22px;
+}
+
+.presentacion_enlaces {
+  display: flex;
+  justify-content: space-between;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 32px;
+  width: 467px;
+}
+
+.enlace {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  gap: 4px;
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+.enlace:hover {
+  text-decoration: underline;
+}
+
+.enlace_imagen_linkedin,
+.enlace_imagen_github,
+.enlace_imagen_instagram {
+  background-color: var(--color-blanco);
+  border-radius: 7px;
+}
+
+.imagen_mia {
+  width: 368px;
+  height: 368px;
+  border-radius: 50%;
+  background: url(<path-to-image>) lightgray center / cover no-repeat;
+}
+
+/* Sección "Sobre mi" */
+.sobre_mi {
+  width: 100%;
+  background-color: var(--color-sobremi-beige);
+  margin-bottom: 0; /* Eliminar margen inferior */
+  padding: 0; /* Asegurarse de que no haya padding extra */
+}
+
+.sobre_mi_contenido {
+  display: flex;
+  flex-direction: column;
+  max-width: 1136px;
+  margin: 0 auto;
+  gap: 16px;
+  padding: 64px 0;
+}
+
+.sobre_mi_texto {
+  color: var(--color-presentacion-letras);
+  font-family: var(--fuente-Raleway);
+  font-size: 16px;
+  width: 751px;
+}
+
+.imagen_firma {
+  width: 140px;
+  height: 52px;
+}
+
+/* Sección "Skills" */
+.skills {
+  width: 100%;
+  background-color: var(--color-beige);
+  padding: 50px;
+}
+
+.skills_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 0; /* Eliminar margen inferior */
+}
+
+.subtitulo_skills,
+.subtitulo_hobbies {
+  color: var(--color-presentacion-letras);
+  font-family: var(--fuente-Raleway);
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.contenido_skills {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.contenido_skills a {
+  display: flex;
+  width: 176px;
+  height: 174px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 25px;
+}
+
+.contenido_logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+  font-size: 25px;
+  gap: 0%;
+  margin: 30px;
+}
+
+.contenido_logo_imagen {
+  filter: brightness(0) saturate(100%) invert(5%) sepia(16%) saturate(212%)
+    hue-rotate(349deg) brightness(101%) contrast(96%);
+  width: 80px;
+  height: 80px;
+}
+
+/* Seccion Hobbies*/
+
+.hobbies {
+  width: 100%;
+  background-color: var(--color-beige);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+.lista_hobbies {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style-type: none;
+  margin-bottom: 88px;
+}
+
+.hobbie_lista_series,
+.hobbie_lista_salidas,
+.hobbie_lista_formula_1,
+.hobbie_lista_cocinar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Formacion*/
+
+.formacion {
+  background-color: var(--color-verdeoscuro);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 82px;
+}
+
+.lista_formacion {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  font-size: 24px;
+}
+
+.lista_formacion_uveg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.lista_formacion_ulm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.lista_formacion_alura {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.imagen_uveg {
+  width: 120px;
+  height: 120px;
+}
+.imagen_ulm {
+  width: 300px;
+  height: 120px;
+}
+
+.imagen_alura {
+  width: 300px;
+  height: 120px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+    hue-rotate(191deg) brightness(98%) contrast(104%);
+}
+.formacion_texto {
+  color: var(--color-blanco);
+}
+
+/* Experiencia*/
+
+.footer {
+  background-color: var(--color-blanco);
+  padding: 16px;
+  text-align: center;
+  width: 100%;
+}
