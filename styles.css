@@ -200,13 +200,13 @@ body {
   font-weight: 700;
 }
 
-.contenido_skills {
+.lista_skills {
   display: flex;
   align-items: flex-start;
   gap: 16px;
 }
 
-.contenido_skills a {
+.lista_skills a {
   display: flex;
   width: 176px;
   height: 174px;
@@ -310,7 +310,7 @@ body {
   height: 120px;
 }
 .imagen_ulm {
-  width: 300px;
+  width: 350px;
   height: 120px;
 }
 
@@ -324,11 +324,41 @@ body {
   color: var(--color-blanco);
 }
 
-/* Experiencia*/
+@media (max-width: 834px) {
+  .navegacion {
+    display: flex;
+  }
 
-.footer {
-  background-color: var(--color-blanco);
-  padding: 16px;
-  text-align: center;
-  width: 100%;
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+  }
+
+  .presentacion_enlaces {
+    font-size: 25px;
+    margin-bottom: 2rem;
+  }
+
+  .sobre_mi {
+    flex-direction: column;
+    width: auto;
+    padding: 25px;
+  }
+
+  .lista_skills {
+    width: auto;
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .lista_hobbies {
+    flex-direction: column;
+  }
+
+  .lista_formacion {
+    flex-direction: column;
+  }
 }
